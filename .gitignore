@@ -1,0 +1,30 @@
+# Node.js specific
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env # Environment variables
+
+# Build output
+build/ # For React
+dist/ # Common for Express build output
+coverage/ # Test coverage reports
+
+# IDE specific files
+.idea/ # WebStorm/IntelliJ
+.vscode/ # VS Code
+*.sublime-project
+*.sublime-workspace
+
+# Operating System specific
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Logs
+logs/
+*.log
+
+# Miscellaneous
+*.tgz # npm packed archives
+.eslintcache
+.prettierrc.local
