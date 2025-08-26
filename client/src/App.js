@@ -2,9 +2,9 @@ import React, {useEffect, useState} from 'react'
 
 
 function App() {
-  const [backendData, setBackendData] = useState([{}])
+  //const [backendData, setBackendData] = useState([{}])
 
-  //fetching /api route
+  /**  //fetching /api route
   useEffect (() => {
     fetch("/api").then(
       //gets a response from the api
@@ -16,16 +16,10 @@ function App() {
         setBackendData(data)
       }
     )
-  }, [])
+  }, [])*/
     return (
       <div>
-        {(typeof backendData.users === 'undefined') ? (
-          <p>Loading...</p>
-        ): (
-          backendData.users.map((user, i) => (
-            <p key={i}>{user}</p>
-          ))
-        )}
+        
       </div>
     )
 }
