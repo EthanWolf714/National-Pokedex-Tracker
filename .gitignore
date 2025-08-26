@@ -28,3 +28,6 @@ logs/
 *.tgz # npm packed archives
 .eslintcache
 .prettierrc.local
+
+# env
+.env
