@@ -21,15 +21,20 @@ function App() {
       <div class="mainCont">
         <header>
             <nav class="navBar">
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
-                <a></a>
+                <div>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                    </div>
+                <div>
+                    <a></a>
+                </div>
             </nav>
         </header>
         <div class="dashBoard"></div>
