@@ -1,0 +1,31 @@
+.navBar{
+    overflow: hidden;
+    background-color: #333;
+    position:sticky;
+    position:-webkit-sticky;
+    top:0;
+
+}
+.navBar a{
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navBar a.profileIcon{
+    float: right;
+}
+
+.navBar a:hover{
+    background-color: #ddd;
+  color: black;
+
+}
+.navBar a.active{
+    background-color: #666;
+    color:white;
+}
+

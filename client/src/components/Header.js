@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-
+import './styles/Header.css';
 
 function Header() {
     return (
@@ -15,7 +15,7 @@ function Header() {
                     <a href="#">Unova</a>
                 </div>
                 <div>
-                    <a href="#">Profile</a>
+                    <a href="#" class="profileIcon">Profile</a>
                 </div>
             </nav>
         </header>

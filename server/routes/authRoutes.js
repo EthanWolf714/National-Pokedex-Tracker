@@ -5,9 +5,11 @@ const passport = require("passport");
 
 
 //set up route from passport website
-
+const router = express.Router();
 //signup
-
+router.get('/signup', function(req, res, next){
+    res.render('signup');
+})
 
 //login
 
