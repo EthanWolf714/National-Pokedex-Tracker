@@ -21,30 +21,35 @@ function Dashboard() {
   }, []);
     return (
       
-      <div class="mainContent">
+      <div className="mainContent">
+        <head>
+            <title>Pokedex Tracker</title>
+        </head>
         <div>
-          <Header></Header>
+          <Header />
         </div>
-        <div class="dashBoard"></div>
-        <table class="dexTable">
-          <caption>National Dex</caption>
-          <thead>
+        <div className="dashboard">
+          <table className="dexTable">
+            <caption>National Dex</caption>
+            <thead>
 
-          </thead>
-          <tbody>
-            {backendData.length > 0 ? (
-              backendData.map((item, index) => (
-                <tr key={index}>
-                  {/* Render table cells with item data */}
+            </thead>
+            <tbody>
+              {backendData.length > 0 ? (
+                backendData.map((item, index) => (
+                  <tr key={index}>
+                    {/* Render table cells with item data */}
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan="3">Loading... or No data available.</td>
                 </tr>
-              ))
-            ) : (
-              <tr>
-                <td colSpan="3">Loading... or No data available.</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+              )}
+            </tbody>
+          </table>
+        </div>
+        
       </div>
     )
 }
