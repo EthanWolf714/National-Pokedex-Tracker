@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
-
+import Dashboard from './components/Dashboard'
 
 function App() {
-  const [backendData, setBackendData] = useState([{}])
+  //const [backendData, setBackendData] = useState([{}])
 
   /**  //fetching /api route
   useEffect (() => {
@@ -19,7 +19,7 @@ function App() {
   }, [])*/
     return (
       <div>
-        
+        <Dashboard></Dashboard>
       </div>
     )
 }
