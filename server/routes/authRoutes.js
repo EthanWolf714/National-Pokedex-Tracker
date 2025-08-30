@@ -18,3 +18,4 @@ router.get('/signup', function(req, res, next){
 
 
 //module export
+module.exports = router;

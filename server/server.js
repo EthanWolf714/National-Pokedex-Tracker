@@ -1,12 +1,12 @@
+
 require("dotenv").config();
 const express = require("express")
 const session = require("express-session")
 const passport = require("passport");
-//const LocalStrategy = require("passport-local")
 const mongoose = require("mongoose");
 
 const authRoutes = require("./routes/authRoutes")
-
+const pokemonRoutes = require("./routes/pokedex.js")
 require("./config/passportConfig")(passport)
 
 
@@ -15,13 +15,19 @@ const app = express()
 
 
 //middle ware
-
+app.use(express.json());
 //sessions
-
+app.use(session({
+    secret:process.env.SESSION_SECRET || "someSecretkey",
+    resave: false,
+    saveUninitialized: false
+}))
 //passport middleware
-
+app.use(passport.initialize());
+app.use(passport.session());
 //routes
-
+app.use("/auth", authRoutes);
+app.use("/api", pokemonRoutes);
 
 
 //connect to atlas
