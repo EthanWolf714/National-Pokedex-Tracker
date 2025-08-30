@@ -3,9 +3,9 @@ import './styles/Header.css';
 
 function Header() {
     return (
-      <div class="mainCont">
+      <div className="mainCont">
         <header>
-            <nav class="navBar">
+            <nav className="navBar">
                 <div>
                     <a href="#">Home</a>
                     <a href="#">Kanto</a>
@@ -15,7 +15,7 @@ function Header() {
                     <a href="#">Unova</a>
                 </div>
                 <div>
-                    <a href="#" class="profileIcon">Profile</a>
+                    <a href="#" className="profileIcon">Profile</a>
                 </div>
             </nav>
         </header>

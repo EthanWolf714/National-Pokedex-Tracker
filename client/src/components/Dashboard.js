@@ -10,7 +10,7 @@ function Dashboard() {
 
   //fetching/api route
   useEffect(() => {
-    fetch(`/api/pokedex?limit=${limit}&offset=${page * limit}`)
+    fetch(`http://localhost:5000/api/pokedex?limit=${limit}&offset=${page * limit}`)
     .then(res => res.json())
     .then(data => setPokemon(data.results))
     .catch(err => console.error(err));
@@ -20,9 +20,9 @@ function Dashboard() {
   return (
       
     <div className="mainContent">
-      <head>
+      {/* <head>
           <title>Pokedex Tracker</title>
-      </head>
+      </head> */}
       <div>
         <Header />
       </div>
@@ -47,7 +47,7 @@ function Dashboard() {
             
           </tbody>
         </table>
-        <div>
+        <div style={{ marginTop: "1rem" }}>
           <button disabled={page === 0} onClick={() => setPage(page - 1)}>Prev</button>
           <button onClick={() => setPage(page + 1)}>Next</button>
         </div>

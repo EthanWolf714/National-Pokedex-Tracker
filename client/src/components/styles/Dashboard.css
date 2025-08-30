@@ -1,6 +1,7 @@
 
 .dexTable {
     margin: 0 auto;
+    border:5px solid;
     border-collapse: collapse;
     width: 80%;
     background: #fff;
