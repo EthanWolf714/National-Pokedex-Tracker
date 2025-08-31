@@ -32,3 +32,10 @@ logs/
 
 # env
 .env
+
+# Jest coverage reports
+coverage/
+
+# Jest cache
+jest-cache/
+jest-test-results.json
