@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import './styles/Header.css';
+import { CgProfile } from "react-icons/cg";
 
 function Header() {
     return (
@@ -15,7 +16,7 @@ function Header() {
                     <a href="#">Unova</a>
                 </div>
                 <div>
-                    <a href="#" className="profileIcon">Profile</a>
+                    <a href="#" className="profileIcon"><CgProfile /></a>
                 </div>
             </nav>
         </header>
